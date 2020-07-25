@@ -1,0 +1,394 @@
+/////////variables
+
+$bgColor: #579c87;
+$textColor: #fdcb46;
+$mainFont: sans-serif;
+$fontSize: 2em;
+
+$colorNote1: #f04a5e;
+$colorNote2: #f7ae6a;
+$colorNote3: #f7bf6a;
+$colorNoteBg: #fcdfdb;
+
+$colorChic1: #C67412;
+$colorChic2: #A56799;
+$colorChic3: #6E4CCC;
+$colorChicBg: #FFF5FE;
+
+$colorDelice1: #0430dfb4;
+$colorDelice2: #0886fbd7;
+$colorDelice3: #089afb;
+$colorDeliceBg: #EDEFEF;
+
+$colorPalette1: #3b7c38;
+$colorPalette2: #3d9339;
+$colorPalette3: #bfff7e;
+$colorPaletteBg: white;
+
+
+//////////// mixins
+
+@mixin linear-grad($color1, $color2, $color3) {
+    background-image: linear-gradient(90deg, $color1 0%, $color2 50%, $color3 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin main-colors {
+    background-color: $bgColor;
+    color: $textColor;
+}
+
+@mixin box-shadow {
+    box-shadow: 0px 0px 5px 2px rgba(199, 199, 199, 1);
+}
+
+@mixin main-typo {
+    font-family: $mainFont;
+    text-align: center;
+}
+
+@mixin main-typo-note {
+    color: black;
+    font-family: "Devonshire", cursive;
+}
+@mixin secondary-typo-note {
+    font-family: "kalam", cursive;
+}
+
+@mixin main-typo-chic {
+    color: $colorChic1;
+    font-family: "Croissant One", serif;
+}
+
+@mixin secondary-typo-chic {
+    font-family: "Source Serif Pro", serif;
+}
+
+@mixin main-typo-delice {
+    color: $colorDelice3;
+    font-family: "Dancing Script", cursive;
+}
+@mixin secondary-typo-delice {
+    font-family: "kalam", cursive;
+    font-weight: 100;
+}
+
+@mixin main-typo-palette {
+    color: $colorPalette2;
+    font-family: "Kaushan Script", cursive;
+}
+
+@mixin secondary-typo-palette {
+    font-weight: 100;
+    font-family: "kalam", cursive;
+}
+/////////////// structure
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    @include main-colors();
+    &__main-title {
+        @include main-colors();
+        @include main-typo();
+        font-size: 2em;
+    }
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    &__index {
+        justify-content: space-evenly;
+    }
+    &__page {
+        justify-content: start;
+    }
+}
+
+
+.footer {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    padding: 20px;
+    @include main-colors();
+    &__el {
+        font-size: $fontSize;
+        @include main-typo();
+        @include main-colors();
+    }
+}
+
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+/////////////////////////// Pages
+
+.noStyleTitle {
+    font-size: 2.5em;
+}
+.ligneMenu {
+    margin: 20px;
+}
+.fullMenu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 3%;
+    margin-bottom: 3%;
+    @include box-shadow();
+    &__note {
+        background-color: $colorNoteBg;
+        &--mainTitle {
+            text-align: center;
+            font-weight: 500;
+            font-size: 3em;
+            @include main-typo-note();
+        }
+        &--secondaryTitle {
+            text-align: center;
+            font-weight: 800;
+            font-size: 2em;
+            @include secondary-typo-note();
+        }
+        &--dish {
+            text-align: left;
+            font-size: 1.5em;
+            @include secondary-typo-note();
+        }
+        &--price {
+            text-align: right;
+            float: right;
+            font-size: 1.5em;
+            font-weight: 800;
+            @include secondary-typo-note();
+        }
+    }
+    &__chic {
+        background-color: $colorChicBg;
+        font-size: 0.7em;
+        &--mainTitle {
+            text-align: center;
+            font-weight: 500;
+            font-size: 3em;
+            @include main-typo-chic();
+        }
+        &--secondaryTitle {
+            text-align: center;
+            font-weight: 800;
+            font-size: 2em;
+            @include secondary-typo-chic();
+        }
+        &__starterPart {
+            color: $colorChic1
+        }
+        &__dishPart {
+            color: $colorChic2
+        }
+        &__dessertPart {
+            color: $colorChic3
+        }
+        &--dish {
+            text-align: left;
+            font-size: 1.5em;
+            @include secondary-typo-chic();
+        }
+        &--price {
+            text-align: right;
+            float: right;
+            font-size: 1.5em;
+            font-weight: 800;
+            @include secondary-typo-chic();
+        }
+    }
+    &__delice {
+        background-color: $colorDeliceBg;
+        &--mainTitle {
+            text-align: center;
+            font-weight: 500;
+            font-size: 4em;
+            @include main-typo-delice();
+        }
+        &--secondaryTitle {
+            text-align: center;
+            font-weight: 800;
+            font-size: 2em;
+            @include secondary-typo-delice();
+        }
+        &--dish {
+            text-align: left;
+            font-size: 1.5em;
+            @include secondary-typo-delice();
+        }
+        &--price {
+            text-align: right;
+            float: right;
+            font-size: 1.5em;
+            font-weight: 800;
+            @include secondary-typo-delice();
+        }
+    }
+    &__palette {
+        background-color: $colorPaletteBg;
+        &--mainTitle {
+            text-align: center;
+            font-weight: 500;
+            font-size: 3em;
+            @include main-typo-palette();
+        }
+        &--secondaryTitle {
+            text-align: center;
+            font-weight: 800;
+            font-size: 2em;
+            @include secondary-typo-palette();
+        }
+        &--dish {
+            text-align: left;
+            font-size: 1.5em;
+            @include secondary-typo-palette();
+        }
+        &--price {
+            text-align: right;
+            float: right;
+            font-size: 1.5em;
+            font-weight: 800;
+            @include secondary-typo-palette();
+        }
+    }
+}
+
+////////////////////////// Index
+
+.soon {
+    margin: 20px;
+    width: 290px;
+    font-size: $fontSize;
+    padding: 10px;
+    font-weight: 100;
+    border-radius: 10px;
+    @include main-typo();
+    @include main-colors();
+}
+
+
+.menu h4 {
+    margin: 0;
+}
+
+.menu h6 {
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+
+.menu {
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    max-width: 50%;
+    text-align: center;
+    font-size: $fontSize;
+
+    @include box-shadow();
+
+    &__note {
+        background-color: $colorNoteBg;
+
+        &--menuTitlePrim {
+            font-size: 1.2em;
+            @include main-typo-note();
+        }
+
+        &--grad {
+            @include linear-grad($colorNote1, $colorNote2, $colorNote3);
+        }
+
+        &--menuTitleSec {
+            @include secondary-typo-note();
+        }
+    }
+
+    &__chic {
+        background-color: $colorChicBg;
+
+        &--menuTitlePrim {
+            @include main-typo-chic();
+            font-size: 0.8em;
+        }
+
+        &--grad {
+            @include linear-grad($colorChic1, $colorChic2, $colorChic3);
+        }
+
+        &--menuTitleSec {
+            @include secondary-typo-chic();
+            font-size: 1.5em;
+        }
+    }
+
+    &__delice {
+        background-color: $colorDeliceBg;
+
+        &--menuTitlePrim {
+            @include main-typo-delice();
+            font-size: 1.2em;
+        }
+
+        &--grad {
+            @include linear-grad($colorDelice1, $colorDelice2, $colorDelice3);
+        }
+
+        &--menuTitleSec {
+            @include secondary-typo-delice();
+        }
+    }
+
+    &__palette {
+        background-color: $colorPaletteBg;
+
+        &--menuTitlePrim {
+            @include main-typo-palette();
+
+            font-size: 1.2em;
+        }
+
+        &--grad {
+            @include linear-grad($colorPalette1, $colorPalette2, $colorPalette3);
+        }
+
+        &--menuTitleSec {
+            @include secondary-typo-palette();
+        }
+    }
+}

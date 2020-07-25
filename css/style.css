@@ -1,0 +1,319 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  height: 100px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #579c87;
+  color: #fdcb46;
+}
+.header__main-title {
+  background-color: #579c87;
+  color: #fdcb46;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 2em;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+.main__index {
+  justify-content: space-evenly;
+}
+.main__page {
+  justify-content: start;
+}
+
+.footer {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  padding: 20px;
+  background-color: #579c87;
+  color: #fdcb46;
+}
+.footer__el {
+  font-size: 2em;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #579c87;
+  color: #fdcb46;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.noStyleTitle {
+  font-size: 2.5em;
+}
+
+.ligneMenu {
+  margin: 20px;
+}
+
+.fullMenu {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 3%;
+  margin-bottom: 3%;
+  box-shadow: 0px 0px 5px 2px #c7c7c7;
+}
+.fullMenu__note {
+  background-color: #fcdfdb;
+}
+.fullMenu__note--mainTitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3em;
+  color: black;
+  font-family: "Devonshire", cursive;
+}
+.fullMenu__note--secondaryTitle {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2em;
+  font-family: "kalam", cursive;
+}
+.fullMenu__note--dish {
+  text-align: left;
+  font-size: 1.5em;
+  font-family: "kalam", cursive;
+}
+.fullMenu__note--price {
+  text-align: right;
+  float: right;
+  font-size: 1.5em;
+  font-weight: 800;
+  font-family: "kalam", cursive;
+}
+.fullMenu__chic {
+  background-color: #FFF5FE;
+  font-size: 0.7em;
+}
+.fullMenu__chic--mainTitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3em;
+  color: #C67412;
+  font-family: "Croissant One", serif;
+}
+.fullMenu__chic--secondaryTitle {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2em;
+  font-family: "Source Serif Pro", serif;
+}
+.fullMenu__chic__starterPart {
+  color: #C67412;
+}
+.fullMenu__chic__dishPart {
+  color: #A56799;
+}
+.fullMenu__chic__dessertPart {
+  color: #6E4CCC;
+}
+.fullMenu__chic--dish {
+  text-align: left;
+  font-size: 1.5em;
+  font-family: "Source Serif Pro", serif;
+}
+.fullMenu__chic--price {
+  text-align: right;
+  float: right;
+  font-size: 1.5em;
+  font-weight: 800;
+  font-family: "Source Serif Pro", serif;
+}
+.fullMenu__delice {
+  background-color: #EDEFEF;
+}
+.fullMenu__delice--mainTitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 4em;
+  color: #089afb;
+  font-family: "Dancing Script", cursive;
+}
+.fullMenu__delice--secondaryTitle {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2em;
+  font-family: "kalam", cursive;
+  font-weight: 100;
+}
+.fullMenu__delice--dish {
+  text-align: left;
+  font-size: 1.5em;
+  font-family: "kalam", cursive;
+  font-weight: 100;
+}
+.fullMenu__delice--price {
+  text-align: right;
+  float: right;
+  font-size: 1.5em;
+  font-weight: 800;
+  font-family: "kalam", cursive;
+  font-weight: 100;
+}
+.fullMenu__palette {
+  background-color: white;
+}
+.fullMenu__palette--mainTitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3em;
+  color: #3d9339;
+  font-family: "Kaushan Script", cursive;
+}
+.fullMenu__palette--secondaryTitle {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2em;
+  font-weight: 100;
+  font-family: "kalam", cursive;
+}
+.fullMenu__palette--dish {
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: "kalam", cursive;
+}
+.fullMenu__palette--price {
+  text-align: right;
+  float: right;
+  font-size: 1.5em;
+  font-weight: 800;
+  font-weight: 100;
+  font-family: "kalam", cursive;
+}
+
+.soon {
+  margin: 20px;
+  width: 290px;
+  font-size: 2em;
+  padding: 10px;
+  font-weight: 100;
+  border-radius: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #579c87;
+  color: #fdcb46;
+}
+
+.menu h4 {
+  margin: 0;
+}
+
+.menu h6 {
+  margin-top: 0em;
+  margin-bottom: 1em;
+}
+
+.menu {
+  width: 250px;
+  height: 350px;
+  margin: 20px;
+  max-width: 50%;
+  text-align: center;
+  font-size: 2em;
+  box-shadow: 0px 0px 5px 2px #c7c7c7;
+}
+.menu__note {
+  background-color: #fcdfdb;
+}
+.menu__note--menuTitlePrim {
+  font-size: 1.2em;
+  color: black;
+  font-family: "Devonshire", cursive;
+}
+.menu__note--grad {
+  background-image: linear-gradient(90deg, #f04a5e 0%, #f7ae6a 50%, #f7bf6a 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu__note--menuTitleSec {
+  font-family: "kalam", cursive;
+}
+.menu__chic {
+  background-color: #FFF5FE;
+}
+.menu__chic--menuTitlePrim {
+  color: #C67412;
+  font-family: "Croissant One", serif;
+  font-size: 0.8em;
+}
+.menu__chic--grad {
+  background-image: linear-gradient(90deg, #C67412 0%, #A56799 50%, #6E4CCC 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu__chic--menuTitleSec {
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.5em;
+}
+.menu__delice {
+  background-color: #EDEFEF;
+}
+.menu__delice--menuTitlePrim {
+  color: #089afb;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2em;
+}
+.menu__delice--grad {
+  background-image: linear-gradient(90deg, #0430dfb4 0%, #0886fbd7 50%, #089afb 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu__delice--menuTitleSec {
+  font-family: "kalam", cursive;
+  font-weight: 100;
+}
+.menu__palette {
+  background-color: white;
+}
+.menu__palette--menuTitlePrim {
+  color: #3d9339;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+}
+.menu__palette--grad {
+  background-image: linear-gradient(90deg, #3b7c38 0%, #3d9339 50%, #bfff7e 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu__palette--menuTitleSec {
+  font-weight: 100;
+  font-family: "kalam", cursive;
+}
+
+/*# sourceMappingURL=style.css.map */
