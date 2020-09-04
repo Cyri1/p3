@@ -119,7 +119,7 @@ a {
   background-color: #fcdfdb;
 }
 .fullMenu__note--underline {
-  background: linear-gradient(to top, black 0%, black 5%, transparent 5%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, black 5%, transparent 5%) no-repeat left bottom/0 100%;
   transition: background-size 1000ms;
 }
 .fullMenu__note--underline:hover {
@@ -156,21 +156,21 @@ a {
   font-size: 0.7em;
 }
 .fullMenu__chic--underline1 {
-  background: linear-gradient(to top, #C67412 0%, #C67412 5%, transparent 5%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #C67412 5%, transparent 5%) no-repeat left bottom/0 100%;
   transition: background-size 1000ms;
 }
 .fullMenu__chic--underline1:hover {
   background-size: 100% 100%;
 }
 .fullMenu__chic--underline2 {
-  background: linear-gradient(to top, #A56799 0%, #A56799 5%, transparent 5%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #A56799 5%, transparent 5%) no-repeat left bottom/0 100%;
   transition: background-size 1000ms;
 }
 .fullMenu__chic--underline2:hover {
   background-size: 100% 100%;
 }
 .fullMenu__chic--underline3 {
-  background: linear-gradient(to top, #6E4CCC 0%, #6E4CCC 5%, transparent 5%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #6E4CCC 5%, transparent 5%) no-repeat left bottom/0 100%;
   transition: background-size 1000ms;
 }
 .fullMenu__chic--underline3:hover {
@@ -215,7 +215,7 @@ a {
   background-color: #EDEFEF;
 }
 .fullMenu__delice--underline {
-  background: linear-gradient(to top, black 0%, black 5%, transparent 5%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, black 5%, transparent 5%) no-repeat left bottom/0 100%;
   transition: background-size 1000ms;
 }
 .fullMenu__delice--underline:hover {
@@ -256,7 +256,7 @@ a {
   background-color: white;
 }
 .fullMenu__palette--underline {
-  background: linear-gradient(to top, black 0%, black 5%, transparent 5%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, black 5%, transparent 5%) no-repeat left bottom/0 100%;
   transition: background-size 1000ms;
 }
 .fullMenu__palette--underline:hover {
