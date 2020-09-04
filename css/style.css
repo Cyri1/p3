@@ -14,7 +14,6 @@ a {
 
 .header {
   display: flex;
-  height: 100px;
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
@@ -70,14 +69,35 @@ a {
 .row {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .noStyleTitle {
-  font-size: 2.5em;
+  font-size: 2.3em;
+  font-family: "Calibri";
 }
 
 .ligneMenu {
+  display: flex;
+  justify-content: space-between;
   margin: 20px;
+}
+
+.line__note {
+  width: 30%;
+  height: 1%;
+}
+.line__chic {
+  width: 25%;
+  height: 3%;
+}
+.line__delice {
+  width: 30%;
+  height: 1%;
+}
+.line__delice {
+  width: 30%;
+  height: 1%;
 }
 
 .fullMenu {
@@ -91,6 +111,13 @@ a {
 .fullMenu__note {
   background-color: #fcdfdb;
 }
+.fullMenu__note--underline {
+  background: linear-gradient(to top, black 0%, black 5%, transparent 5%) no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
+}
+.fullMenu__note--underline:hover {
+  background-size: 100% 100%;
+}
 .fullMenu__note--mainTitle {
   text-align: center;
   font-weight: 500;
@@ -99,19 +126,20 @@ a {
   font-family: "Devonshire", cursive;
 }
 .fullMenu__note--secondaryTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   font-weight: 800;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "kalam", cursive;
 }
 .fullMenu__note--dish {
-  text-align: left;
   font-size: 1.5em;
   font-family: "kalam", cursive;
 }
 .fullMenu__note--price {
-  text-align: right;
-  float: right;
   font-size: 1.5em;
   font-weight: 800;
   font-family: "kalam", cursive;
@@ -119,6 +147,27 @@ a {
 .fullMenu__chic {
   background-color: #FFF5FE;
   font-size: 0.7em;
+}
+.fullMenu__chic--underline1 {
+  background: linear-gradient(to top, #C67412 0%, #C67412 5%, transparent 5%) no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
+}
+.fullMenu__chic--underline1:hover {
+  background-size: 100% 100%;
+}
+.fullMenu__chic--underline2 {
+  background: linear-gradient(to top, #A56799 0%, #A56799 5%, transparent 5%) no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
+}
+.fullMenu__chic--underline2:hover {
+  background-size: 100% 100%;
+}
+.fullMenu__chic--underline3 {
+  background: linear-gradient(to top, #6E4CCC 0%, #6E4CCC 5%, transparent 5%) no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
+}
+.fullMenu__chic--underline3:hover {
+  background-size: 100% 100%;
 }
 .fullMenu__chic--mainTitle {
   text-align: center;
@@ -128,9 +177,13 @@ a {
   font-family: "Croissant One", serif;
 }
 .fullMenu__chic--secondaryTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   font-weight: 800;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Source Serif Pro", serif;
 }
 .fullMenu__chic__starterPart {
@@ -143,19 +196,23 @@ a {
   color: #6E4CCC;
 }
 .fullMenu__chic--dish {
-  text-align: left;
   font-size: 1.5em;
   font-family: "Source Serif Pro", serif;
 }
 .fullMenu__chic--price {
-  text-align: right;
-  float: right;
   font-size: 1.5em;
   font-weight: 800;
   font-family: "Source Serif Pro", serif;
 }
 .fullMenu__delice {
   background-color: #EDEFEF;
+}
+.fullMenu__delice--underline {
+  background: linear-gradient(to top, black 0%, black 5%, transparent 5%) no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
+}
+.fullMenu__delice--underline:hover {
+  background-size: 100% 100%;
 }
 .fullMenu__delice--mainTitle {
   text-align: center;
@@ -164,22 +221,25 @@ a {
   color: #089afb;
   font-family: "Dancing Script", cursive;
 }
+.fullMenu__delice--secondaryTitle > h2 {
+  font-weight: 100;
+}
 .fullMenu__delice--secondaryTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
-  font-weight: 800;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "kalam", cursive;
   font-weight: 100;
 }
 .fullMenu__delice--dish {
-  text-align: left;
   font-size: 1.5em;
   font-family: "kalam", cursive;
   font-weight: 100;
 }
 .fullMenu__delice--price {
-  text-align: right;
-  float: right;
   font-size: 1.5em;
   font-weight: 800;
   font-family: "kalam", cursive;
@@ -187,6 +247,13 @@ a {
 }
 .fullMenu__palette {
   background-color: white;
+}
+.fullMenu__palette--underline {
+  background: linear-gradient(to top, black 0%, black 5%, transparent 5%) no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
+}
+.fullMenu__palette--underline:hover {
+  background-size: 100% 100%;
 }
 .fullMenu__palette--mainTitle {
   text-align: center;
@@ -196,6 +263,10 @@ a {
   font-family: "Kaushan Script", cursive;
 }
 .fullMenu__palette--secondaryTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   font-weight: 800;
   font-size: 2em;
@@ -203,18 +274,28 @@ a {
   font-family: "kalam", cursive;
 }
 .fullMenu__palette--dish {
-  text-align: left;
   font-size: 1.5em;
   font-weight: 100;
   font-family: "kalam", cursive;
 }
 .fullMenu__palette--price {
-  text-align: right;
-  float: right;
   font-size: 1.5em;
   font-weight: 800;
   font-weight: 100;
   font-family: "kalam", cursive;
+}
+
+.dot {
+  display: inline-block;
+}
+.dot__1 {
+  animation: dots 500ms 0ms infinite alternate;
+}
+.dot__2 {
+  animation: dots 500ms 250ms infinite alternate;
+}
+.dot__3 {
+  animation: dots 500ms 500ms infinite alternate;
 }
 
 .soon {
@@ -230,6 +311,22 @@ a {
   color: #fdcb46;
 }
 
+.zoom {
+  transition: transform 500ms, opacity 500ms;
+}
+.zoom:hover {
+  transform: scale(1.15);
+  opacity: 0.6;
+}
+
+.shake {
+  display: inline-block;
+}
+.shake:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
 .menu h4 {
   margin: 0;
 }
@@ -243,7 +340,6 @@ a {
   width: 250px;
   height: 350px;
   margin: 20px;
-  max-width: 50%;
   text-align: center;
   font-size: 2em;
   box-shadow: 0px 0px 5px 2px #c7c7c7;
@@ -314,6 +410,74 @@ a {
 .menu__palette--menuTitleSec {
   font-weight: 100;
   font-family: "kalam", cursive;
+}
+
+@keyframes dots {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@media screen and (max-width: 750px) {
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer__el {
+    font-size: 1em;
+  }
+
+  .ligneMenu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .line {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .fullMenu {
+    width: 85%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
