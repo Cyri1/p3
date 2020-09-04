@@ -9,11 +9,11 @@ a {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .header {
   display: flex;
+  height: 90px;
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,9 @@ a {
 
 .footer {
   display: flex;
+  position: -webkit-sticky;
   position: sticky;
+  height: 50px;
   bottom: 0;
   justify-content: space-between;
   margin-top: 20px;
@@ -81,6 +83,11 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 20px;
+}
+
+.ml {
+  margin: 7%;
+  font-size: 1.2em;
 }
 
 .line__note {
@@ -289,12 +296,15 @@ a {
   display: inline-block;
 }
 .dot__1 {
+  -webkit-animation: dots 500ms 0ms infinite alternate;
   animation: dots 500ms 0ms infinite alternate;
 }
 .dot__2 {
+  -webkit-animation: dots 500ms 250ms infinite alternate;
   animation: dots 500ms 250ms infinite alternate;
 }
 .dot__3 {
+  -webkit-animation: dots 500ms 500ms infinite alternate;
   animation: dots 500ms 500ms infinite alternate;
 }
 
@@ -323,7 +333,9 @@ a {
   display: inline-block;
 }
 .shake:hover {
+  -webkit-animation: shake 0.5s;
   animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
@@ -386,7 +398,7 @@ a {
   font-size: 1.2em;
 }
 .menu__delice--grad {
-  background-image: linear-gradient(90deg, #0430dfb4 0%, #0886fbd7 50%, #089afb 100%);
+  background-image: linear-gradient(90deg, #0430df 0%, #0886fb 50%, #089afb 100%);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -412,12 +424,55 @@ a {
   font-family: "kalam", cursive;
 }
 
+@-webkit-keyframes dots {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
+}
 @keyframes dots {
   0% {
     transform: translateY(0px);
   }
   100% {
     transform: translateY(-6px);
+  }
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 @keyframes shake {
@@ -463,6 +518,10 @@ a {
 
   .footer__el {
     font-size: 1em;
+  }
+
+  .footer {
+    height: 20px;
   }
 
   .ligneMenu {
